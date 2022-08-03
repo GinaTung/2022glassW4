@@ -1,13 +1,19 @@
 // base資料夾
-@import './base/_reset.scss';
+@import './base/_reset';
 // utils資料夾
-@import './utils/_variables.scss';
+@import './utils/_variables';
 // base資料夾
-@import './base/_fontstyle.scss';
-@import './base/_base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// @import url('https://fonts.google.com/?selected=Material+Icons');
+@import './base/_fontstyle';
+@import './base/_base';
 // layout資料夾
-@import './layout/_header.scss';
-@import './layout/_footer.scss';
+@import './layout/_header';
+@import './layout/_footer';
+
+@import './pages/_index';
+@import './pages/blog';
 
 // $color: #00cc99;
 

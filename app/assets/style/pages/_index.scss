@@ -1,0 +1,68 @@
+.banner{
+    background-image: url('../images/home-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 296px 0;
+    text-align: right;
+}
+@media(max-width:767px){
+    .banner-content{
+        margin: 0 36px;
+    }
+}
+@media(max-width:767px){
+    .banner{
+        background-image: url('../images/home-header-sm.png');
+    }
+}
+@media(max-width:375px){
+    .banner-content{
+        margin: 0 14px;
+    }
+}
+h1{
+    font-size: $fz-primary*4;
+    color: $co-danger;
+    line-height: $lh-primary*1.5;
+    font-weight: 700;
+}
+@media(max-width:576px){
+    h1{
+        font-size: $fz-primary*2;
+        margin-bottom: 8px;
+    }
+}
+@media(max-width:375px){
+    h1{
+        font-size: $fz-primary*1.5;
+        margin-bottom: 8px;
+    }
+}
+h3{
+    font-size: $fz-primary*2.25;
+    color: $co-danger;
+    line-height: $lh-primary;
+    font-weight: 400;
+}
+@media(max-width:576px){
+    h3{
+        font-size: $fz-primary*1.5;
+    }
+}
+@media(max-width:375px){
+    h3{
+        font-size: $fz-primary;
+    }
+}
+.btn{
+    margin-top: 4px;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #fff;
+    background: $co-primary;
+    font-size: $fz-primary*1.25;
+    &:hover{
+        background: $co-secondary;
+    }
+}
