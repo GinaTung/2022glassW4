@@ -40,6 +40,11 @@ h2{
         margin-bottom: 24px;
     }
 }
+@media(max-width:375px){
+    h2{
+        margin-left: 5px;
+    }
+}
 .blog-article{
     padding-bottom: 64px;
 }
@@ -59,6 +64,11 @@ h2{
         li{
             max-width: 100%;
         }
+    }
+}
+@media(max-width:375px){
+    .blog-article-list{
+        padding: 0 13px;
     }
 }
 .blog-article-data{
@@ -104,9 +114,7 @@ h2{
             align-items: flex-start;
             .blog-article-content{
                 margin-top: 8px;
-                .blog-article-subtitle{
-    
-                }
+                width: 100%;
                 .blog-article-textcontent-mobile-sm{
                     display: none;
                 }
