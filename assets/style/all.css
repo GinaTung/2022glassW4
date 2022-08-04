@@ -71,17 +71,17 @@ a {
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
-    margin: 0 12px; } }
+    margin: 0; } }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 767px;
-    margin: 0 36px; } }
+    max-width: 767px; } }
 
 @media (max-width: 576px) {
   .container {
     max-width: 576px;
-    margin: 0; } }
+    margin: 0;
+    padding: 0; } }
 
 .header {
   background: #AA0601; }
@@ -353,14 +353,14 @@ h3 {
   h3 {
     font-size: 16px; } }
 
-.btn {
+.banner-btn {
   margin-top: 4px;
   padding: 6px 12px;
   text-decoration: none;
   color: #fff;
   background: #AA0601;
   font-size: 20px; }
-  .btn:hover {
+  .banner-btn:hover {
     background: #000000; }
 
 .blog {
@@ -406,11 +406,8 @@ h2 {
   h2 {
     margin-top: 40px;
     font-size: 24px;
-    margin-bottom: 24px; } }
-
-@media (max-width: 375px) {
-  h2 {
-    margin-left: 5px; } }
+    margin-bottom: 24px;
+    margin-left: 9px; } }
 
 .blog-article {
   padding-bottom: 64px; }
@@ -441,7 +438,7 @@ h2 {
     .blog-article-list li {
       max-width: 100%; } }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .blog-article-list {
     padding: 0 13px; } }
 
@@ -573,5 +570,74 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px; }
+
+h2 {
+  margin-top: 96px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  font-size: 48px;
+  border-left: 8px solid #650300;
+  line-height: 1.5;
+  font-weight: 700; }
+
+.location-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+  .location-area .location-area-title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-right: 16px; }
+
+.location-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .location-list .location-card {
+    width: 32%;
+    margin-bottom: 48px; }
+
+@media (max-width: 992px) {
+  .location-list .location-card {
+    width: 48%; } }
+
+@media (max-width: 576px) {
+  .location-list .location-card {
+    width: 100%; } }
+
+.location-card-data .location-card-title {
+  padding: 8px 24px;
+  border: 1px solid #00000020;
+  font-size: 24px;
+  line-height: 1.5; }
+
+.card-content {
+  border: 1px solid #00000020;
+  padding: 16px 24px 8px 27px; }
+  .card-content li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 8px;
+    font-size: 20px; }
+    .card-content li img {
+      margin-right: 12px;
+      height: 24px;
+      width: 24px; }
+
+.location-card-btn {
+  color: #fff;
+  font-size: 19px;
+  line-height: 27px;
+  background: #000;
+  padding: 16px 0;
+  text-align: center;
+  display: block; }
 
 /*# sourceMappingURL=all.css.map */
