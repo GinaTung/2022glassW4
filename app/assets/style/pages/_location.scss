@@ -7,6 +7,7 @@ h2{
     line-height: $lh-primary*1.5;
     font-weight: 700;
 }
+
 .location-area{
     display: flex;
     margin-bottom: 40px;
@@ -16,35 +17,61 @@ h2{
         margin-right: 16px;
     }
 }
-// .mr-1{
-//     margin-right: 24px;
-// }
+@media(max-width:576px){
+    .location-area{
+            padding: 0 13px;
+    }
+}
+.dropdown{
+    width: 304px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 26px;
+}
+@media(max-width:576px){
+    .dropdown{
+        width: 276px;
+    }
+}
 .location-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
+    margin: 0 -12px;
     .location-card{
-        width: 32%;
-        margin-bottom: 48px;
+        width: 31.48%;
+        margin: 0 12px 48px 12px;
     }
 }
 @media(max-width:992px){
     .location-list{
-        // justify-content: space-between;
         .location-card{
-            width: 48%;
-            // margin-right: 0;
+            width: 46.95%;
+        }
+    }
+}
+@media(max-width:767px){
+    .location-list{
+        .location-card{
+            width: 46.5%;
         }
     }
 }
 @media(max-width:576px){
-    .location-list{
-        .location-card{
-            width: 100%;
-            // margin-right: 0;
+    .location-content{
+        padding: 0 13px;
+        .location-list{
+            margin: 0 ;
+            .location-card{
+                width: 95%;
+                margin-bottom: 48px;
+            }
         }
     }
 }
+// .location-card-hide{
+//     display: none;
+// }
 .location-card-data{
     .location-card-title{
         padding: 8px 24px;
@@ -65,6 +92,9 @@ h2{
             margin-right: 12px;
             height: 24px;
             width: 24px;
+        }
+        a{
+            color: #000;
         }
 
     }
