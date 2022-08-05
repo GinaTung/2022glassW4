@@ -71,11 +71,12 @@ a {
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
-    margin: 0; } }
+    margin: 0 12px; } }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 767px; } }
+    max-width: 767px;
+    margin: 0 36px; } }
 
 @media (max-width: 576px) {
   .container {
@@ -590,26 +591,50 @@ h2 {
     line-height: 1.5;
     margin-right: 16px; }
 
+@media (max-width: 576px) {
+  .location-area {
+    padding: 0 13px; } }
+
+.dropdown {
+  width: 304px;
+  height: 38px;
+  font-size: 18px;
+  line-height: 26px; }
+
+@media (max-width: 576px) {
+  .dropdown {
+    width: 276px; } }
+
 .location-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0 -12px; }
   .location-list .location-card {
-    width: 32%;
-    margin-bottom: 48px; }
+    width: 31.48%;
+    margin: 0 12px 48px 12px; }
 
 @media (max-width: 992px) {
   .location-list .location-card {
-    width: 48%; } }
+    width: 46.95%; } }
+
+@media (max-width: 767px) {
+  .location-list .location-card {
+    width: 46.5%; } }
 
 @media (max-width: 576px) {
-  .location-list .location-card {
-    width: 100%; } }
+  .location-content {
+    padding: 0 13px; }
+    .location-content .location-list {
+      margin: 0; }
+      .location-content .location-list .location-card {
+        width: 95%;
+        margin-bottom: 48px; } }
 
 .location-card-data .location-card-title {
   padding: 8px 24px;
@@ -630,6 +655,8 @@ h2 {
       margin-right: 12px;
       height: 24px;
       width: 24px; }
+    .card-content li a {
+      color: #000; }
 
 .location-card-btn {
   color: #fff;
