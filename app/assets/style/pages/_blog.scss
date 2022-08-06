@@ -35,6 +35,9 @@
     margin-bottom: 60px;
     li{
         max-width: 49.1%;
+        img{
+            height: 100%;
+        }
     }
 }
 @media(max-width:576px){
