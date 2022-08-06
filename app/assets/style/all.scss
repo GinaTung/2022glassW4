@@ -8,34 +8,13 @@
 // @import url('https://fonts.google.com/?selected=Material+Icons');
 @import './base/_fontstyle';
 @import './base/_base';
+
+
 // layout資料夾
 @import './layout/_header';
 @import './layout/_footer';
 
 @import './pages/_index';
 @import './pages/blog';
-@import './pages/location'
-
-// $color: #00cc99;
-
-// .header {
-//   height: 200px;
-//   background-color: #00cc99;
-// }
-
-// .footer {
-//   height: 200px;
-//   background-color: #00cc99;
-// }
-
-// .box {
-//   width: 100px;
-//   height: 100px;
-//   background-color: red;
-//   display: flex;
-//   transition: all 0.5s;
-//   &:hover {
-//     width: 200px;
-//     background-color: $color;
-//   }
-// }
+@import './pages/location';
+@import './pages/faq.scss';

@@ -1,12 +1,4 @@
-h2{
-    margin-top: 96px;
-    margin-bottom: 32px;
-    padding-left: 16px;
-    font-size: $fz-primary*3;
-    border-left: 8px solid $co-danger;
-    line-height: $lh-primary*1.5;
-    font-weight: 700;
-}
+
 
 .location-area{
     display: flex;
@@ -20,6 +12,7 @@ h2{
 @media(max-width:576px){
     .location-area{
             padding: 0 13px;
+            flex-wrap: wrap;
     }
 }
 .dropdown{
@@ -36,24 +29,16 @@ h2{
 .location-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    margin: 0 -12px;
+    gap: 0 24px;
     .location-card{
-        width: 31.48%;
-        margin: 0 12px 48px 12px;
+        width: calc((100% - 48px) / 3);
+        margin-bottom: 48px;
     }
 }
 @media(max-width:992px){
     .location-list{
         .location-card{
-            width: 46.95%;
-        }
-    }
-}
-@media(max-width:767px){
-    .location-list{
-        .location-card{
-            width: 46.5%;
+            width: calc((100% - 24px) / 2);
         }
     }
 }
@@ -63,15 +48,12 @@ h2{
         .location-list{
             margin: 0 ;
             .location-card{
-                width: 95%;
+                width: 100%;
                 margin-bottom: 48px;
             }
         }
     }
 }
-// .location-card-hide{
-//     display: none;
-// }
 .location-card-data{
     .location-card-title{
         padding: 8px 24px;
