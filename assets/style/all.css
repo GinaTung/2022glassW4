@@ -696,4 +696,26 @@ h4 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 
+.products-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .products-menu li a {
+    display: block;
+    font-size: 32px;
+    line-height: 1.5;
+    padding: 24px 116px;
+    color: #000; }
+
+.products-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*# sourceMappingURL=all.css.map */
