@@ -1,0 +1,17 @@
+.products-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        a{
+            display: block;
+            font-size: $fz-primary*2;
+            line-height: $lh-primary*1.5;
+            padding: 24px 116px;
+            color: #000;
+        }
+    }
+}
+.products-banner{
+    display: flex;
+}
