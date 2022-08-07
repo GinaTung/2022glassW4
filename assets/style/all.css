@@ -935,12 +935,19 @@ h4 {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      margin-bottom: 24px;
-      gap: 0 24px; }
-      .location2-content .location2-list-md .location2-card {
-        width: calc((100% - 24px) / 2); }
+      margin-bottom: 24px; }
       .location2-content .location2-list-md .location2-card-data {
-        width: calc((100% - 24px) / 2); }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        gap: 0 24px; }
+        .location2-content .location2-list-md .location2-card-data .location2-card {
+          width: calc((100% - 24px) / 2); }
+          .location2-content .location2-list-md .location2-card-data .location2-card img {
+            height: 100%; }
+        .location2-content .location2-list-md .location2-card-data .location2-card2 {
+          width: calc((100% - 24px) / 2); }
     .location2-content .location2-map {
       width: 100%;
       height: 100%; } }
@@ -948,19 +955,31 @@ h4 {
 @media (max-width: 576px) {
   .location2-content {
     padding: 0 13px; }
-    .location2-content .location2-list-md .location2-card {
-      width: 100%; }
     .location2-content .location2-list-md .location2-card-data {
-      width: 100%; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .location2-content .location2-list-md .location2-card-data .location2-card {
+        width: 100%; }
+      .location2-content .location2-list-md .location2-card-data .location2-card2 {
+        width: 100%; } }
 
 @media (min-width: 992px) {
   .location2-content .location2-list-md {
     display: none; } }
 
-.location2-card-data .location2-card-title {
+.location2-card .location2-card-data .location2-card-title {
   padding: 8px 24px;
   border: 1px solid #00000020;
   font-size: 24px;
   line-height: 1.5; }
+
+@media (max-width: 992px) {
+  .location2-list-md .location2-card-data .location2-card-title {
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+    font-size: 24px;
+    line-height: 1.5; } }
 
 /*# sourceMappingURL=all.css.map */
