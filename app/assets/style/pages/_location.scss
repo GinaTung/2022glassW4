@@ -70,7 +70,7 @@
         display: flex;
         padding-bottom: 8px;
         font-size: 20px;
-        // line-height: $lh-primary*1.5;
+        line-height: $lh-primary*1.5;
         img{
             margin-right: 12px;
             height: 24px;
@@ -90,4 +90,7 @@
     padding: 16px 0;
     text-align: center;
     display: block;
+    &:hover{
+        background: $co-primary;
+    }
 }

@@ -137,3 +137,14 @@
         }
     }
 }
+@media(max-width:992px){
+    .location2-card-data{
+        .location2-card2{
+            .card-content{
+                li{
+                    line-height: $lh-primary*1.5;
+                }
+            }
+        }
+    }
+}
