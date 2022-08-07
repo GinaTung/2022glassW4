@@ -650,7 +650,8 @@ h4 {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 8px;
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 1.5; }
     .card-content li img {
       margin-right: 12px;
       height: 24px;
@@ -666,6 +667,8 @@ h4 {
   padding: 16px 0;
   text-align: center;
   display: block; }
+  .location-card-btn:hover {
+    background: #AA0601; }
 
 .faq-title {
   font-size: 24px;
@@ -980,6 +983,10 @@ h4 {
     padding: 8px 24px;
     border: 1px solid #00000020;
     font-size: 24px;
+    line-height: 1.5; } }
+
+@media (max-width: 992px) {
+  .location2-card-data .location2-card2 .card-content li {
     line-height: 1.5; } }
 
 /*# sourceMappingURL=all.css.map */
